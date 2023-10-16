@@ -1,8 +1,11 @@
 import React from 'react'
 
-const Button = () => {
+const Button = ({type, title, icon, variant}: ButtonProps) => {
   return (
-    <button>Button</button>
+    <button
+    type="button"
+    >
+    Button</button>
   )
 }
 
