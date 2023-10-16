@@ -29,6 +29,7 @@ const Hero = () => {
                 key={index}
                 alt="star"
                 width={24}
+                height={24}
               />
             ))}
           </div>
