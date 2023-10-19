@@ -5,7 +5,7 @@ interface CampProps {
   peopleJoined: string;
 }
 
-const CampSite = ({backgroudImage, title, subtitle, peopleJoined}: CampPromps) => {
+const CampSite = ({backgroundImage, title, subtitle, peopleJoined}: CampProps) => {
   return (
     <div>
       Campsite 1
