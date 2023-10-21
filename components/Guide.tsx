@@ -2,7 +2,11 @@ import React from 'react'
 
 const Guide = () => {
   return (
-    <div>Guide</div>
+    <section className="flexCenter flex-col">
+      <div className="border-2 border-red-500">
+
+      </div>
+    </section>
   )
 }
 
