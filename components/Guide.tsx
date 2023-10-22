@@ -11,6 +11,9 @@ const Guide = () => {
           width={50}
           height={50}
         />
+        <p className="uppercase regular-18 -mt-1 mb-3 text-green-50">
+          We are here for you
+        </p>
       </div>
     </section>
   )
