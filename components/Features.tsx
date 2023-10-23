@@ -23,6 +23,7 @@ const Features = () => {
               width={50}
               height={50}
             />
+             <h2 className="bold-40 lg:bold-64">Our Features</h2>
           </div>
         </div>
       </div>
