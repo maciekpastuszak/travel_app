@@ -33,7 +33,6 @@ const Features = () => {
               key={feature.title}
               title={feature.title} 
               icon={feature.icon}
-              variant={feature.variant}
               description={feature.description} 
             />
           ))}
@@ -47,11 +46,10 @@ const Features = () => {
 type FeatureItem = {
   title: string;
   icon: string;
-  variant: string;
   description: string;
 }
 
-const FeatureItem = ({title, icon, variant, description}: FeatureItem) => {
+const FeatureItem = ({title, icon, description}: FeatureItem) => {
   return (
     <li className="flex w-full flex-1 flex-col items-start">
       <div className="rounded-full p-4 lg:p-7 bg-green-50">
