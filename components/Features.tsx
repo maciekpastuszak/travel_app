@@ -1,3 +1,4 @@
+import { FEATURES } from '@/constants'
 import Image from 'next/image'
 import React from 'react'
 
@@ -26,9 +27,22 @@ const Features = () => {
             />
              <h2 className="bold-40 lg:bold-64">Our Features</h2>
           </div>
+        <ul>
+          {FEATURES.map((feature) => (
+            <FeatureItem title={feature.title} />
+          ))}
+        </ul>
         </div>
       </div>
     </section>
+  )
+}
+
+const FeatureItem = ({title}) => {
+  return (
+    <div>
+      {title}
+    </div>
   )
 }
 
