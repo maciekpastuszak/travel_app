@@ -29,7 +29,13 @@ const Features = () => {
           </div>
         <ul>
           {FEATURES.map((feature) => (
-            <FeatureItem title={feature.title} />
+            <FeatureItem 
+              key={feature.title}
+              title={feature.title} 
+              icon={feature.icon}
+              variant={feature.variant}
+              description={feature.description} 
+            />
           ))}
         </ul>
         </div>
@@ -38,7 +44,7 @@ const Features = () => {
   )
 }
 
-const FeatureItem = ({title}) => {
+const FeatureItem = ({title, icon, variant, description}) => {
   return (
     <div>
       {title}
