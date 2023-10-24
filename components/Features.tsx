@@ -44,7 +44,14 @@ const Features = () => {
   )
 }
 
-const FeatureItem = ({title, icon, variant, description}) => {
+type FeatureItem = {
+  title: string;
+  icon: string;
+  variant: string;
+  description: string;
+}
+
+const FeatureItem = ({title, icon, variant, description}: FeatureItem) => {
   return (
     <div>
       {title}
