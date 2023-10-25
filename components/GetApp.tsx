@@ -1,4 +1,5 @@
 import React from 'react'
+import Button from './Button'
 
 const GetApp = () => {
   return (
@@ -13,6 +14,13 @@ const GetApp = () => {
               title="Download App"
               icon="/apple.svg"
               variant="btn_white"
+              full
+            />
+            <Button 
+              type="button"
+              title="Download App"
+              icon="/android.svg"
+              variant="btn_dark_green_outline"
               full
             />
           </div>
