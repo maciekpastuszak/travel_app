@@ -31,7 +31,7 @@ const Footer = () => {
                       <Link 
                       href="/"
                       key={link.label}
-                      className="flex gap-4 md:flex-row lg:flex-row"
+                      className="flex gap-4 md:flex-col lg:flex-row"
                       >
                       </Link>
                      ))}   
