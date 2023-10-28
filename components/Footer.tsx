@@ -24,8 +24,17 @@ const Footer = () => {
   )
 }
 
-const FooterColumn = ({ title, children}) => {
-  return ();
+type FooterColumnProps = {
+  title: string;
+  children: React.ReactNode;
+}
+
+const FooterColumn = ({ title, children}: FooterColumnProps) => {
+  return (
+    <div>
+      <h4>{title}</h4>
+    </div>
+  );
 }
 
 
