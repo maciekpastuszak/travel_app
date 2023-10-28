@@ -13,8 +13,8 @@ const Footer = () => {
           </Link>
 
           <div className='flex flex-wrap gap-10 sm:justify-between md:flex-1'>
-            {FOOTER_LINKS.map((columns) => (
-                <FooterColumn>
+            {FOOTER_LINKS.map((column) => (
+                <FooterColumn title={column.title}>
                 </FooterColumn>
               ))} 
           </div>
@@ -33,6 +33,7 @@ const FooterColumn = ({ title, children}: FooterColumnProps) => {
   return (
     <div>
       <h4>{title}</h4>
+      {children}
     </div>
   );
 }
